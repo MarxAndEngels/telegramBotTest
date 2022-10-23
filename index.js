@@ -12,7 +12,6 @@ bot.on('message', async (msg) => {
 
   const text = msg.text;
 
-  if(text === '/start'){
      await bot.sendMessage(chatId,'Добро пожаловать', {
         reply_markup: {
             keyboard: [
@@ -27,6 +26,5 @@ bot.on('message', async (msg) => {
             ] 
         }
     })
-  }
 //   bot.sendMessage(chatId, 'Received your message');
 });
