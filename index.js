@@ -25,7 +25,7 @@ const TelegramBot = require('node-telegram-bot-api');
 
 const bot = new TelegramBot(token, {polling: true});
 
-const webApiUrl = 'https://proxy-cars.ru'
+const webApiUrl = 'https://xn----7sb6agkabkedhjf1k.xn--p1ai/'
 
 
 bot.on('message', async (msg) => {
@@ -47,5 +47,5 @@ bot.on('message', async (msg) => {
             ] 
         }
     })
-//   bot.sendMessage(chatId, 'Received your message');
+  bot.sendMessage(chatId, 'Received your message');
 });
