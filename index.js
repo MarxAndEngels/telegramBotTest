@@ -1,24 +1,3 @@
-
-const express = require('express')
-
-const app = express()
-
-const PORT = 5050;
-
-
-app.get('/', (req,res)=>{
-    res.json({
-        status: 200,
-        message: "index.jss"
-    })
-}
-)
-
-app.listen(PORT, ()=>{
-    console.log('server start');
-})
-
-
 const token = '5356985784:AAHC7s1a4dNW9F7EeQsCAtSksgj2BwPU6vs';
 
 const TelegramBot = require('node-telegram-bot-api');
